@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Bangers&family=Lobster&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 20px;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content-layout {
+    width: 100%;
+    height: 100%;
+    font-family: 'Baloo 2', cursive;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    'nav-header'
+    'text-content'
+    'footer';
+}
+
+.nav-header {
+    grid-row: 1;
+    grid-column: 1/7;
+    height: 200px;
+    background: #4785C4;
+    background: -moz-linear-gradient(-45deg, #4785C4 0%, #1C6EA4 27%, #0F0F0F 0);
+    background: -webkit-linear-gradient(-45deg, #4785C4 0%, #1C6EA4 27%, #0F0F0F 0);
+    background: linear-gradient(135deg, #4785C4 0%, #1C6EA4 27%, #0F0F0F 0);}
+
+.logo-photo {
+    width: 200px;
+    float: left;
+    margin: 0.6% 5%;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__item {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.search-loupe {
+    width: 10px;
+}
+
+.nav__link--sign {
+    color: white;
+    text-decoration: none;
+}
+
+.text-content {
+    grid-row: 2;
+    grid-column: 1/7;
+    background-color: rgb(245, 245, 245);
+}
+
+.article{
+    height: 840px;
+}
+
+.name {
+    font-size: 2rem;
+    color: #4785C4;
+    padding: 100px 0 40px 100px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+}
+
+.middle {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.position {
+    width: 270px;
+    height: 470px;
+}
+
+.photo-position {
+    width: 100%;
+}
+
+.end {
+    height: 100px;
+}
+
+.link--end {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #4785C4;
+}
+
+.library {
+    position: relative;
+    height: 800px;
+    background-image: url('https://images.pexels.com/photos/247899/pexels-photo-247899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); 
+    background-attachment: fixed;
+}
+
+.library-text {
+    color: #4785C4;
+    font-family: 'Lobster', cursive;
+}
+
+.library-text--huge {
+    font-size: 8rem;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+}
+
+.library-text--medium {
+    font-size: 4rem;
+    position: absolute;
+    left: 550px;
+    top: 400px;
+}
+    
+.unfamiliar-user {
+    height: 600px;
+    position: relative;
+    background: #0F0F0F;
+    background: -moz-linear-gradient(-45deg, #0F0F0F 60%, #1C6EA4 54%, #4785C4 0);
+    background: -webkit-linear-gradient(-45deg, #0F0F0F 60%, #1C6EA4 54%, #4785C4 0);
+    background: linear-gradient(135deg, #0F0F0F 60%, #1C6EA4 54%, #4785C4 0);
+}
+
+.text {
+    color: #9B9898;
+} 
+
+.text--title {
+    color: #4785C4;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.text--title-event {
+    color: #4785C4;
+    font-size: 1.5rem;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text--describe {
+    color: #9B9898;
+    font-size: 1.2rem;
+    padding: 5px;
+    text-align: justify;
+}
+
+.text--huge {
+    color: white;
+    font-size: 10rem;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-family: 'Bangers', cursive;
+}
+
+.text--medium {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 230px;
+    left: 150px;
+    font-family: 'Bangers', cursive;
+}
+
+.profits-list {
+    position: absolute;
+    top: 220px;
+    right: 100px;
+}
+
+.profit {
+    color: white;
+    font-size: 1.7rem;
+    list-style-type: circle;
+    line-height: 3.7rem;
+}
+
+.register-user {
+    width: 200px;
+    height: 70px;
+    background-color: white;
+    border: none;
+    font-family: 'Baloo 2', cursive;
+}
+
+.register-user--btn {
+    position: absolute;
+    top: 500px;
+    right: 400px;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.register-user--link {
+    text-decoration: none;
+    color: #9B9898;
+}
+
+.article-user {
+    height: 550px;    
+}
+
+.article-user--recommended {
+    height: 900px;
+}
+
+.row-position {
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row-position--small {
+    height: 359px;
+}
+
+.row-position--smaller {
+    height: 300px;
+}
+
+.row-box {
+    width: 600px;
+    height: 300px;
+}
+
+.box {
+    float: left;
+}
+
+.photo-position-user {
+    width: 220px;
+    padding: 10px;
+}
+
+.text-position-user {
+    color: #9B9898;
+    font-size: 1.4rem;
+    padding-left: 30px;
+    line-height: 2.7rem;
+}
+
+.text-position-user--uppercase {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.footer {
+    grid-row: 3;
+    grid-column: 1/7;
+    background: #4A4A4A;
+    background: -moz-linear-gradient(top, #4A4A4A 0%, #0F0F0F 49%, #0F0F0F 100%);
+    background: -webkit-linear-gradient(top, #4A4A4A 0%, #0F0F0F 49%, #0F0F0F 100%);
+    background: linear-gradient(to bottom, #4A4A4A 0%, #0F0F0F 49%, #0F0F0F 100%);
+}
+
+.column {
+    height: 300px;
+    width: 18.6%;
+    margin: 0 7%;
+    float: left;
+    position: relative;
+}
+
+.name-column {
+    color: #4785C4;
+    font-size: 2rem;
+    padding-top: 50px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 700;
+}
+
+.email-area__box {
+    width: 300px; 
+    height: 40px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    left: 70px;
+}
+
+.button--small-blue {
+    background: #4785C4;
+    background: -moz-linear-gradient(top, #4785C4 0%, #4785C4 36%, #244362 100%);
+    background: -webkit-linear-gradient(top, #4785C4 0%, #4785C4 36%, #244362 100%);
+    background: linear-gradient(to bottom, #4785C4 0%, #4785C4 36%, #244362 100%);
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.icon-left {
+    float: left;
+    list-style: none;
+}
+
+.demo-icon--footer {
+    color: #4785C4;
+    margin: 0 10px 0 -10px;
+    font-size: 3rem;
+}
+
+.contact-detail {
+    color: white;
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.important-info {
+    clear: both;
+}
+
+.text--link {
+    color: #4785C4;
+}
+
+.text--footer {
+    color: white;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    
+}
+
+.important-info .text {
+    padding-left: 10px;
+}
